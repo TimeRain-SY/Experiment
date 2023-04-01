@@ -22,7 +22,8 @@ public class Mian {//贾普20222031124
         zhangsanFamily.seeTV();
         //使用Family创建实例李四
         Family lisiFaminy = new Family();
-        //使用李四调用方法buyTV，因为TV类中buyTV仅指向一个地址，所以李四和张三的电视是同一个
+        //使用李四调用方法buyTV，因16行实例TV调用方法赋值channel为2，
+        //张三家TV和李四家TV同时受实例TV赋值影响，所以李四TV的channel同为2
         lisiFaminy.buyTV(TV);
         //调用seeTV。输出应为“经济频道”
         lisiFaminy.seeTV();
