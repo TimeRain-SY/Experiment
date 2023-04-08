@@ -1,8 +1,25 @@
 package item3;
 
 public class test {
-    int x,y;
-    public test(int x,int y){
+    private int x,y;
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public int getY() {
+        return y;
+    }
+    public test(){};
+    public test(int x, int y){
         this.x = x;
         this.y = y;
     }

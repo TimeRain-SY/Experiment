@@ -1,13 +1,24 @@
 package item3;
 
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args){
-        test t = new test(66,50);
-        System.out.println("加法"+t.add());
-        System.out.println("减法"+t.sub());
-        System.out.println("乘法"+t.mul());
-        System.out.println("除法"+t.div());
-        System.out.println("取余"+t.mod());
+        test t = new test();
+        int a,b;
+        Scanner sn = new Scanner(System.in);
+        System.out.println("请输入第一个数");
+        t.setX(sn.nextInt());
+        a = t.getX();
+        System.out.println("请输入第二个数");
+        t.setY(sn.nextInt());
+        b = t.getY();
+        System.out.println("输入的数字为"+a+","+b);
+        System.out.println(a+"+"+b+"="+t.add());
+        System.out.println(a+"-"+b+"="+t.sub());
+        System.out.println(a+"*"+b+"="+t.mul());
+        System.out.println(a+"/"+b+"="+t.div());
+        System.out.println(a+"%"+b+"="+t.mod());
     }
 }
 
