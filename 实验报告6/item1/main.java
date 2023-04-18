@@ -13,7 +13,7 @@ public class main {
         int num = 0;
         boolean boo = true;
         while (boo) {
-            System.out.println("输入1将date和str进行加法运算\n输入2将date和str清空为默认值\n输入3获取String型的date和str\n输入0结束程序");
+            System.out.println("输入1 将date和str进行加法运算\n输入2 将date和str清空为默认值\n输入3 获取String型的date和str\n输入0 结束程序");
             num = sn.nextInt();
             switch (num){
                 case 1 :{
