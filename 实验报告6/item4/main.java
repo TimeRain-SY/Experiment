@@ -11,23 +11,35 @@ public class main {
         int num = 0;
         boolean boo = true;
         while (boo){
-            System.out.println("输入1 判断数组S1，S2是否相等\n输入2 输出两个集合的交集和并集\n输入3 改变数组元素\n输入4 初始化数组某个元素\n输入0 结束程序");
+            System.out.println("\n输入1 判断数组S1，S2是否相等\n输入2 输出两个集合的交集和并集\n输入3 插入数组元素\n输入4 删除数组元素\n输入0 结束程序");
             num = sn.nextInt();
             switch (num){
+                //判断数组相等
                 case 1:{
-                    arr.sortArr();
+                    arr.contrastArr();
+                    break;
                 }
+                //输出交集并集
                 case 2:{
-
+                    arr.intersectionArr();
+                    System.out.printf("\n");
+                    arr.unionArr();
+                    break;
                 }
+                //插入数组元素
                 case 3:{
-
+                    arr.getarr();
+                    System.out.println("请输入想要修改的数组(1或2)");
+                    break;
                 }
+                //删除数组元素
                 case 4:{
-
+                    break;
                 }
+                //结束程序
                 case 0:{
-
+                    boo = false;
+                    break;
                 }
                 default:{
                     System.out.println("请输入有效数字");
