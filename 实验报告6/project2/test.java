@@ -21,7 +21,7 @@ public class test {
     //打印数组所有元素
     public void print(){
         for(int i = 0;i<arr.length;i++){
-            System.out.println(arr[i]);
+            System.out.printf(arr[i]+" ");
         }
     }
     //计算数组中偶数数量
