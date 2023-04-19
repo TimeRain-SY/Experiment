@@ -3,7 +3,7 @@ package project3;
 public class date {
     private long YYYY;
     private int MM;
-    private float DD;
+    private int DD;
     public void setYYYY(long YYYY){
             this.YYYY = YYYY;
     }
@@ -12,9 +12,9 @@ public class date {
             this.MM = MM;
         }
     }
-    public void setDD(short DD){
+    public void setDD(float DD){
         if(DD < 31){
-            this.DD = DD;
+            this.DD = (int)DD;
         }
     }
     public long getYYYY(){
@@ -30,19 +30,19 @@ public class date {
     date(long YYYY,int MM,float DD){
         this.YYYY = YYYY;
         this.MM = MM;
-        this.DD = DD;
+        this.DD = (int)DD;
         System.out.println(YYYY+"年"+MM+"月"+DD+"日");
     }
     date(float DD,int MM,long YYYY){
         this.YYYY = YYYY;
         this.MM = MM;
-        this.DD = DD;
+        this.DD = (int)DD;
         System.out.println(DD+"日"+MM+"月"+YYYY+"年");
     }
     date(int MM,float DD,long YYYY){
         this.YYYY = YYYY;
         this.MM = MM;
-        this.DD = DD;
+        this.DD = (int)DD;
         System.out.println(MM+"月"+DD+"日"+YYYY+"年");
     }
     public void test(){
