@@ -10,6 +10,6 @@ public class main {
         a.random(sn.nextInt());
         System.out.println("随机数组为");
         a.print();
-        System.out.println("其中偶数有"+a.even()+"个");
+        System.out.println("\n其中偶数有"+a.even()+"个");
     }
 }
