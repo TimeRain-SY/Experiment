@@ -7,7 +7,7 @@ public class test {
     //构造函数
     test(){}
     test(int a){
-        this.arr = random(a);
+        arr = random(a);
     }
     //随机生成数组元素
     public int[] random(int a){
