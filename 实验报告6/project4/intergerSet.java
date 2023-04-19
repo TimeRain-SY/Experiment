@@ -209,6 +209,7 @@ public class intergerSet {
                 if (z >= 1 && z <= 10) {
                     x = z-1;
                     S1.arr[x] = 0;
+                    S1.ar = S1.arr;
                 }else{
                     System.out.println("数据不合法，请重新输入");
                     delete(1);
@@ -222,6 +223,7 @@ public class intergerSet {
                 if (z >= 1 && z <= 10) {
                     x = z-1;
                     S2.arr[x] = 0;
+                    S2.ar = S2.arr;
                 }else{
                     System.out.println("数据不合法，请重新输入");
                     delete(2);
