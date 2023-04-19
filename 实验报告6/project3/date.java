@@ -31,19 +31,22 @@ public class date {
         this.YYYY = YYYY;
         this.MM = MM;
         this.DD = (int)DD;
-        System.out.println(YYYY+"年"+MM+"月"+DD+"日");
+        System.out.println("构造函数1");
+        System.out.println(this.YYYY+"年"+this.MM+"月"+this.DD+"日");
     }
     date(float DD,int MM,long YYYY){
         this.YYYY = YYYY;
         this.MM = MM;
         this.DD = (int)DD;
-        System.out.println(DD+"日"+MM+"月"+YYYY+"年");
+        System.out.println("构造函数2");
+        System.out.println(this.DD+"日"+this.MM+"月"+this.YYYY+"年");
     }
     date(int MM,float DD,long YYYY){
         this.YYYY = YYYY;
         this.MM = MM;
         this.DD = (int)DD;
-        System.out.println(MM+"月"+DD+"日"+YYYY+"年");
+        System.out.println("构造函数3");
+        System.out.println(this.MM+"月"+this.DD+"日"+this.YYYY+"年");
     }
     public void test(){
         System.out.println("test");
