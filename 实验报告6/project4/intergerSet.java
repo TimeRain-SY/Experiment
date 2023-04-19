@@ -80,7 +80,6 @@ public class intergerSet {
     }
 
     public void unionArr() {
-        sortArr();
         int num = 0;
         System.out.println("数组并集为");
         for (int z = 0; z < 10; z++) {
@@ -89,15 +88,23 @@ public class intergerSet {
             }
             num = 0;
             for (int x = 0; x < 10; x++) {
-                if (S1.ar[z] != S2.ar[x]) {
-                    num++;
-                }
-                if (num == 10) {
-                    if (S2.ar[x] != 0) {
-                        System.out.print(S2.ar[x] + " ");
-                    }
+                if (S2.ar[z] == S1.ar[x]) {
                     num = 0;
+                }else {
+                    num++;
+                    if (num == 10) {
+                        if (S2.ar[z] != 0) {
+                            System.out.print(S2.ar[z] + " ");
+                        }
+                        num = 0;
+                    }
                 }
+//                if (num == 10) {
+//                    if (S2.ar[z] != 0) {
+//                        System.out.print(S2.ar[z] + "test2 ");
+//                    }
+//                    num = 0;
+//                }
             }
         }
     }
@@ -127,11 +134,12 @@ public class intergerSet {
                         }
                     //后移数组赋值
                         if(n == 10){
-                        for (int i = 8; i > a; i--) {
+                        for (int i = 8; i > z; i--) {
                             int b = i - 1;
                             S1.arr[i] = S1.arr[b];
                         }
-                        S1.arr[z - 1] = num;}
+                        S1.arr[z - 1] = num;
+                        S1.ar = S1.arr;}
                     //
                     } else {
                         System.out.println("数字不在20-80之间，请重新输入");
@@ -162,11 +170,12 @@ public class intergerSet {
                         }
                         //后移数组赋值
                         if(n == 10){
-                            for (int i = 8; i > a; i--) {
+                            for (int i = 8; i >z; i--) {
                                 int b = i - 1;
                                 S2.arr[i] = S2.arr[b];
                             }
-                            S2.arr[z - 1] = num;}
+                            S2.arr[z - 1] = num;
+                            S2.ar = S2.arr;}
                         //
                     } else {
                         System.out.println("数字不在20-80之间，请重新输入");
