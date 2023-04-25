@@ -20,7 +20,7 @@ class Square extends Shape{
 class Circle extends Shape{
     double r =0;
     public void showArea(){
-        System.out.println("正方形面积为:"+3.14*r*r);
+        System.out.println("圆面积为:"+3.14*r*r);
     }
 }
 
