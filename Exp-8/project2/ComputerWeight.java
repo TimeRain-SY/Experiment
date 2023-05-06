@@ -21,6 +21,12 @@ class WashMachino implements ComputerWeight{
         return wight;
     }
 }
+//class Refrigerator implements ComputerWeight{
+//    public double computerWeight(){
+//        double wight = 300;
+//        return wight;
+//    }
+//}
 class Truck{
     ComputerWeight[] goods;
     double totalWeight=0;
