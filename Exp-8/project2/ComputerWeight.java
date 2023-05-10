@@ -5,19 +5,19 @@ public interface ComputerWeight {
 }
 class Telecision implements ComputerWeight{
     public double computerWeight(){
-        double wight = 100;
+        double wight = 3.5;
         return wight;
     }
 }
 class Computer implements ComputerWeight{
     public double computerWeight(){
-        double wight = 50;
+        double wight = 2.67;
         return wight;
     }
 }
 class WashMachino implements ComputerWeight{
     public double computerWeight(){
-        double wight = 200;
+        double wight = 13.8;
         return wight;
     }
 }
